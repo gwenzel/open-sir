@@ -1,8 +1,14 @@
 # open-sir
 
-Open source pandemics modelling API in python. The models implemented are in the scope of compartmental models of disease transmission, such as the widely used [Susceptible-Infected-Removed (SIR) model](http://rocs.hu-berlin.de/corona/docs/forecast/model/#classic-sir-dynamics). Recently, a new epidemic model based in SIR, SIR-X, was developed by the [Robert Koch Institut](http://rocs.hu-berlin.de/corona/docs/forecast/model/#sir-x-dynamics-outbreaks-with-temporally-increasing-interventions) and it is also implemented in open-sir.
+Open-SIR is an Open Source Python project for modeling pandemics using Compartmental Models, such as the widely used [Susceptible-Infected-Removed (SIR) model](http://rocs.hu-berlin.de/corona/docs/forecast/model/#classic-sir-dynamics). 
 
-The API features model construction, parameter fitting and calculation of confidence intervals.
+## Features
+- Model the behavior of infectious diseases
+- Parameter fitting
+- Calculation of confidence intervals
+- CLI for interfacing with non Python environments (Bash, Node.JS, Matlab, etc).
+
+So far, Open-SIR provides an implementation of the SIR model and the recently new SIR based model SIR-X, developed by the [Robert Koch Institut](http://rocs.hu-berlin.de/corona/docs/forecast/model/#sir-x-dynamics-outbreaks-with-temporally-increasing-interventions).
 
 ## Getting Started
 
@@ -87,4 +93,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
-
