@@ -1,6 +1,8 @@
 # open-sir
 
-Open-SIR is an Open Source Python project for modeling pandemics using Compartmental Models, such as the widely used [Susceptible-Infected-Removed (SIR) model](http://rocs.hu-berlin.de/corona/docs/forecast/model/#classic-sir-dynamics). 
+Open-SIR is an Open Source Python project for modeling pandemics and infectious diseases using Compartmental Models, such as the widely used [Susceptible-Infected-Removed (SIR) model](http://rocs.hu-berlin.de/corona/docs/forecast/model/#classic-sir-dynamics). 
+
+The current stage of the software is *Alpha*.
 
 ## Features
 - Model the behavior of infectious diseases
@@ -12,33 +14,44 @@ So far, Open-SIR provides an implementation of the SIR model and the recently ne
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Open-SIR uses [Pipenv](https://pipenv.pypa.io/en/latest/) to automatically create a virtual environment and manage python packages. The python packages required by Open-SIR are listed in the [Pipfile](Pipfile).
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Python 3.7 and Pipenv are required. 
 
 ```
-Give examples
+Pipenv
+Python 3.7
+```
+
+And the python packages
+```
+numpy
+matplotlib
+scipy
+jupyter
+sklearn
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+After cloning the repository, change the current directory to the repository by `cd open-sir` and automatically install the environment from the Pipfile using Pipenv:
 
 ```
-Give the example
+pipenv install
 ```
 
-And repeat
+Next, activate the Pypenv shell:
+```
+pipenv shell
+```
+
+Check that the installation was succesful using:
 
 ```
-until finished
-```
 
-End with an example of getting some data out of the system or using it for a little demo
+```
 
 ## Running the tests
 
@@ -80,8 +93,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Jose Alamos** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Felipe Huerta**
+* **Jose Alamos** - [RIOT](https://github.com/RIOT-OS)
+* **Felipe Huerta** - [PhD Student](https://www.imperial.ac.uk/people/f.huerta-perez17) at [Imperial College London](https://github.com/ImperialCollegeLondon)
+* **Sebastián Salata** - Software Engineer - Full Stack
+
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
