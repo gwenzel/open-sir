@@ -37,10 +37,16 @@ Next, activate the Pipenv shell:
 pipenv shell
 ```
 
-Check that the installation was successful calling the CLI open-sir.py
+In the Pipenv shell, check that the installation was successful calling the CLI open-sir.py
 
 ```
 python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 
+```
+
+Alternatively, run the same command through Pipenv outside the open-sir Pipenv environment:
+
+```
+pipenv python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 
 ```
 
 The output of open-sir.py is a table with a 6 day prediction of the number of susceptible (S), infected (I) and removed (R) population. The initial conditions -i represent Ealing data as of 04/04/2020. The parameters provide a prediction in the hypothetical case that no lockdown is taking place.
@@ -66,21 +72,15 @@ And learn how to use the API to:
 
 ## Running the tests
 
-### To be completed
-
-At a minimum: test convergence of SIR to exponential I_0*(alpha-beta) when S->1.
+Test the correct implementation of the SIR model using
 
 ```
-Give an example
+pipenv run test
 ```
 
-### Coding style tests
+### Coding style
 
 Coding analysis is automatically reviewed using [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://black.readthedocs.io/en/stable/) with the non-default parameters available in [.pylintrc](pylintrc)
-
-## Contributing
-
-Please read [CONTRIBUTING.MD](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
