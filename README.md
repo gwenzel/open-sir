@@ -44,7 +44,7 @@ In the Pipenv shell, check that the installation was successful calling the CLI 
 python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 
 ```
 
-Alternatively, run the same command through Pipenv outside the open-sir Pipenv environment:
+Alternatively, instead of activating the shell, you can run the same command through Pipenv outside the open-sir Pipenv environment:
 
 ```
 pipenv python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 
