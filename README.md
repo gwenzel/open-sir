@@ -36,6 +36,7 @@ Next, activate the Pipenv shell:
 ```
 pipenv shell
 ```
+## Usage example
 
 In the Pipenv shell, check that the installation was successful calling the CLI open-sir.py
 
@@ -55,8 +56,6 @@ The last line of the output should be
 ```
 6.000000000000000000e+00,3.213056091837603017e+05,1.233370563811089232e+04,8.360685178128811458e+03
 ```
-
-## Usage example
 
 Open and run the Jupyter Notebook [SIR-X.ipynb](SIR-X.ipynb) to:
 * Get an overview of the SIR model
