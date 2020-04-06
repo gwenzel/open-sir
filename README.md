@@ -88,7 +88,7 @@ Coding analysis is automatically reviewed using [Pylint](https://www.pylint.org/
 * **Felipe Huerta** - [PhD Student](https://www.imperial.ac.uk/people/f.huerta-perez17) at [Imperial College London](https://github.com/ImperialCollegeLondon)
 * **Sebastián Salata** - Software Engineer - Full Stack
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/open-sir/open-sir/contributors) who participated in this project.
 
 ## License
 
