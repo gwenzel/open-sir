@@ -47,7 +47,7 @@ python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6
 Alternatively, instead of activating the shell, you can run the same command through Pipenv outside the open-sir Pipenv environment:
 
 ```
-pipenv python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 
+pipenv run python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 
 ```
 
 The output of open-sir.py is a table with a 6 day prediction of the number of susceptible (S), infected (I) and removed (R) population. The initial conditions -i represent Ealing data as of 04/04/2020. The parameters provide a prediction in the hypothetical case that no lockdown is taking place.
