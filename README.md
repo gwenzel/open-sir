@@ -24,7 +24,7 @@ Open-SIR uses [Pipenv](https://pipenv.pypa.io/en/latest/) to automatically creat
 * Jupyter
 * Matplotlib
 
-### Installing (for developers now)
+### Installation
 
 After cloning the repository, change the current directory to the repository by `cd open-sir` and automatically install the environment from the Pipfile using Pipenv:
 
@@ -38,6 +38,7 @@ pipenv shell
 ```
 ## Usage example
 
+### Command line interface
 In the Pipenv shell, check that the installation was successful calling the CLI open-sir.py
 
 ```
@@ -56,12 +57,13 @@ The last line of the output should be
 ```
 6.000000000000000000e+00,3.213056091837603017e+05,1.233370563811089232e+04,8.360685178128811458e+03
 ```
+### Python API usage
 
 Open and run the Jupyter Notebook [SIR-X.ipynb](SIR-X.ipynb) to:
 * Get an overview of the SIR model
 * Explore case studies
 
-And learn how to use the API to:
+And learn how the API can be used to:
 
 * Build compartmental models
 * Fit parameters to existing data 
@@ -71,15 +73,14 @@ And learn how to use the API to:
 
 ## Running the tests
 
-Test the correct implementation of the SIR model using
-
+Test the package running the tests out of the open-sir Pipenv environment.
 ```
 pipenv run test
 ```
 
 ### Coding style
 
-Coding analysis is automatically reviewed using [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://black.readthedocs.io/en/stable/) with the non-default parameters available in [.pylintrc](pylintrc)
+Coding analysis is automatically reviewed using [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://black.readthedocs.io/en/stable/) with the non-default parameters available in [.pylintrc](pylintrc).
 
 ## Authors
 
