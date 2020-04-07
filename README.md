@@ -16,13 +16,10 @@ So far, Open-SIR provides an implementation of the SIR model and the recently ne
 
 Open-SIR uses [Pipenv](https://pipenv.pypa.io/en/latest/) to automatically create a virtual environment and manage python packages. The python packages required by Open-SIR are listed in the [Pipfile](Pipfile).
 
+
 ### Dependencies
 * Python 3.7
 * Pipenv
-* NumPy
-* SciPy
-* Jupyter
-* Matplotlib
 
 ### Installation
 
@@ -36,28 +33,51 @@ Next, activate the Pipenv shell:
 ```
 pipenv shell
 ```
+
+You can run the following command to check that the installation succeeded.
+
+```
+pipenv run python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 > data.csv
+```
+
+## Running the tests
+
+Test the package running the tests out of the open-sir Pipenv environment.
+```
+pipenv run test
+```
+
 ## Usage example
+
+You can use Open-SIR to create a 6 days prediction of the number of susceptible (S), infected (I) and removed (R) population. 
+The initial conditions '-i' represent Ealing data as of 04/04/2020. The parameters '-p' provide a prediction in the hypothetical 
+case that no lockdown would be taking place.
 
 ### Command line interface
 In the Pipenv shell, check that the installation was successful calling the CLI open-sir.py
 
 ```
-python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 
+python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 > data.csv
 ```
 
-Alternatively, instead of activating the shell, you can run the same command through Pipenv outside the open-sir Pipenv environment:
+The output of open-sir.py is a .csv file with the predictions.
+
+### API
+
+You can replicate the predictions of the CLI with the following python script:
 
 ```
-pipenv run python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 
+from models import SIR
+my_SIR = SIR() # Initialize an empty SIR model
+params = [0.95,0.38] # Define model parameters
+w0 = [341555,445,0] # Define initial conditions
+my_SIR.set_params(p=params,initial_conds=w0) # Set model parameters
+n_days = 6 # Define the amount of days to predict
+my_SIR.solve(n_days, n_days+1) # Call model.solve functions
+sol = my_SIR.fetch() # Fetch model solution
 ```
 
-The output of open-sir.py is a table with a 6 day prediction of the number of susceptible (S), infected (I) and removed (R) population. The initial conditions -i represent Ealing data as of 04/04/2020. The parameters provide a prediction in the hypothetical case that no lockdown is taking place.
-
-The last line of the output should be
-```
-6.000000000000000000e+00,3.213056091837603017e+05,1.233370563811089232e+04,8.360685178128811458e+03
-```
-### Python API usage
+### Try the Jupyter Notebook
 
 Open and run the Jupyter Notebook [SIR-X.ipynb](SIR-X.ipynb) to:
 * Get an overview of the SIR model
@@ -70,13 +90,6 @@ And learn how the API can be used to:
 * Predict susceptible, infected and removed population
 * Calculate confidence intervals of the predictions
 
-
-## Running the tests
-
-Test the package running the tests out of the open-sir Pipenv environment.
-```
-pipenv run test
-```
 
 ### Coding style
 
