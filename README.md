@@ -80,7 +80,7 @@ pipenv run test
 
 ### Coding style
 
-Coding analysis is automatically reviewed using [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://black.readthedocs.io/en/stable/) with the non-default parameters available in [.pylintrc](pylintrc).
+This project uses [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://black.readthedocs.io/en/stable/) to ensure consistent coding practices, and enforced by CircleCI. Non-default parameters are available in [.pylintrc](pylintrc).
 
 ## Authors
 
