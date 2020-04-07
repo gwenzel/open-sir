@@ -12,7 +12,7 @@ The current stage of the software is *Alpha*.
 
 So far, Open-SIR provides an implementation of the SIR model and the recently new SIR based model SIR-X, developed by the [Robert Koch Institut](http://rocs.hu-berlin.de/corona/docs/forecast/model/#sir-x-dynamics-outbreaks-with-temporally-increasing-interventions).
 
-## Getting Started
+## Development Setup
 
 Open-SIR uses [Pipenv](https://pipenv.pypa.io/en/latest/) to automatically create a virtual environment and manage python packages. The python packages required by Open-SIR are listed in the [Pipfile](Pipfile).
 
