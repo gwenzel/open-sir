@@ -26,7 +26,7 @@ Open-SIR uses [Pipenv](https://pipenv.pypa.io/en/latest/) to automatically creat
 
 ### Installation
 
-After cloning the repository, change the current directory to the repository by `cd open-sir` and automatically install the environment from the Pipfile using Pipenv:
+After cloning the repository, change the current directory to the repository via `cd open-sir` and automatically install the environment from the Pipfile using Pipenv:
 
 ```
 pipenv install
