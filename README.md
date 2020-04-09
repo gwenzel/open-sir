@@ -99,7 +99,7 @@ This project uses [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://
 
 * **José Álamos** - [RIOT](https://github.com/RIOT-OS)
 * **Felipe Huerta** - [PhD Student](https://www.imperial.ac.uk/people/f.huerta-perez17) at [Imperial College London](https://github.com/ImperialCollegeLondon)
-* **Sebastián Salata** - Software Engineer - Full Stack
+* **[Sebastián Salata](https://github.com/sasalatart)** - Software Engineer - Full Stack
 
 See also the list of [contributors](https://github.com/open-sir/open-sir/contributors) who participated in this project.
 
