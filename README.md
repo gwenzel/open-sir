@@ -16,7 +16,6 @@ So far, Open-SIR provides an implementation of the SIR model and the recently ne
 
 Open-SIR uses [Pipenv](https://pipenv.pypa.io/en/latest/) to automatically create a virtual environment and manage python packages. The python packages required by Open-SIR are listed in the [Pipfile](Pipfile).
 
-
 ### Dependencies
 * Python 3.7
 * Pipenv
@@ -74,7 +73,7 @@ The output of open-sir.py is a .csv file with the predictions.
 
 You can replicate the predictions of the CLI with the following python script:
 
-```
+```python
 from models import SIR
 my_SIR = SIR() # Initialize an empty SIR model
 params = [0.95,0.38] # Define model parameters
