@@ -37,7 +37,7 @@ pipenv shell
 You can run the following command to check that the installation succeeded.
 
 ```
-pipenv run python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 > data.csv
+pipenv run start -p '[0.95,0.38]' -i '[341555,445,0]' -t 6
 ```
 
 ## Running the tests
