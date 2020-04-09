@@ -1,7 +1,6 @@
 # open-sir
 
 Open-SIR is an Open Source Python project for modelling pandemics and infectious diseases using Compartmental Models, such as the widely used [Susceptible-Infected-Removed (SIR) model](http://rocs.hu-berlin.de/corona/docs/forecast/model/#classic-sir-dynamics). 
-
 The current stage of the software is *Alpha*.
 
 ## Features
@@ -17,24 +16,21 @@ So far, Open-SIR provides an implementation of the SIR model and the recently ne
 Open-SIR uses [Pipenv](https://pipenv.pypa.io/en/latest/) to automatically create a virtual environment and manage python packages. The python packages required by Open-SIR are listed in the [Pipfile](Pipfile).
 
 ### Dependencies
+
 * Python 3.7
 * Pipenv
 
 ### Installation
 
 After cloning the repository, change the current directory to the repository via `cd open-sir` and automatically install the environment from the Pipfile using Pipenv:
-
 ```
 pipenv install
 ```
-
 Next, activate the Pipenv shell:
 ```
 pipenv shell
 ```
-
 You can run the following command to check that the installation succeeded.
-
 ```
 pipenv run start -p '[0.95,0.38]' -i '[341555,445,0]' -t 6
 ```
@@ -50,7 +46,6 @@ pipenv run test
 
 This project uses [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://black.readthedocs.io/en/stable/) to ensure consistent coding practices, and enforced by CircleCI. Non-default parameters are available in [.pylintrc](.pylintrc).
 
-
 ## Usage example
 
 You can use Open-SIR to create a 6 days prediction of the number of susceptible (S), infected (I) and removed (R) population. 
@@ -60,7 +55,6 @@ case that no lockdown would be taking place.
 ### Command line interface
 
 In the Pipenv shell, check that the installation was successful by calling the CLI:
-
 ```
 python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 > data.csv
 ```
@@ -69,10 +63,9 @@ The output of open-sir.py is a .csv file with the predictions.
 
 *Note: On Windows, the CLI must be run from Powershell or any bash shell such as [Git BASH](https://gitforwindows.org/)*
 
-### API
+### Python API
 
 You can replicate the predictions of the CLI with the following python script:
-
 ```python
 from models import SIR
 my_SIR = SIR() # Initialize an empty SIR model
@@ -96,7 +89,6 @@ And learn how the API can be used to:
 * Fit parameters to existing data 
 * Predict susceptible, infected and removed population
 * Calculate confidence intervals of the predictions
-
 
 ## Authors
 
