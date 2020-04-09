@@ -54,7 +54,8 @@ The initial conditions '-i' represent Ealing data as of 04/04/2020. The paramete
 case that no lockdown would be taking place.
 
 ### Command line interface
-In the Pipenv shell, check that the installation was successful calling the CLI open-sir.py
+
+In the Pipenv shell, check that the installation was successful by calling the CLI:
 
 ```
 python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 > data.csv
@@ -89,7 +90,6 @@ And learn how the API can be used to:
 * Fit parameters to existing data 
 * Predict susceptible, infected and removed population
 * Calculate confidence intervals of the predictions
-
 
 ### Coding style
 
