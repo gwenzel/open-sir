@@ -49,7 +49,7 @@ pipenv run test
 
 ### Coding style tests
 
-This project uses [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://black.readthedocs.io/en/stable/) to ensure consistent coding practices, and enforced by CircleCI. Non-default parameters are available in [.pylintrc](pylintrc).
+This project uses [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://black.readthedocs.io/en/stable/) to ensure consistent coding practices, and enforced by CircleCI. Non-default parameters are available in [.pylintrc](.pylintrc).
 
 
 ## Usage example
