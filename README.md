@@ -47,6 +47,11 @@ Test the package running the tests out of the open-sir Pipenv environment.
 pipenv run test
 ```
 
+### Coding style tests
+
+This project uses [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://black.readthedocs.io/en/stable/) to ensure consistent coding practices, and enforced by CircleCI. Non-default parameters are available in [.pylintrc](pylintrc).
+
+
 ## Usage example
 
 You can use Open-SIR to create a 6 days prediction of the number of susceptible (S), infected (I) and removed (R) population. 
@@ -93,9 +98,6 @@ And learn how the API can be used to:
 * Predict susceptible, infected and removed population
 * Calculate confidence intervals of the predictions
 
-### Coding style
-
-This project uses [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://black.readthedocs.io/en/stable/) to ensure consistent coding practices, and enforced by CircleCI. Non-default parameters are available in [.pylintrc](pylintrc).
 
 ## Authors
 
