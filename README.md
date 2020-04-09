@@ -63,6 +63,8 @@ python open-sir.py -p '[0.95,0.38]' -i '[341555,445,0]' -t 6 > data.csv
 
 The output of open-sir.py is a .csv file with the predictions.
 
+*Note: On Windows, the CLI must be run from Powershell or any bash shell such as [Git BASH](https://gitforwindows.org/)*
+
 ### API
 
 You can replicate the predictions of the CLI with the following python script:
@@ -97,8 +99,8 @@ This project uses [Pylint](https://www.pylint.org/) and [Black 19.10b0](https://
 
 ## Authors
 
-* **José Álamos** - [RIOT](https://github.com/RIOT-OS)
-* **Felipe Huerta** - [PhD Student](https://www.imperial.ac.uk/people/f.huerta-perez17) at [Imperial College London](https://github.com/ImperialCollegeLondon)
+* **[José Álamos](https://github.com/jia200x)** - [RIOT](https://github.com/RIOT-OS)
+* **[Felipe Huerta](https://github.com/felipehuerta17)** - [PhD Student](https://www.imperial.ac.uk/people/f.huerta-perez17) at [Imperial College London](https://github.com/ImperialCollegeLondon)
 * **[Sebastián Salata](https://github.com/sasalatart)** - Software Engineer - Full Stack
 
 See also the list of [contributors](https://github.com/open-sir/open-sir/contributors) who participated in this project.
